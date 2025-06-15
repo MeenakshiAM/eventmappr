@@ -129,7 +129,9 @@ We welcome contributions to improve EventMappr!
 
 ### 🌟 Awesome Contributors
 
-
+<a href="https://github.com/Bhavya1352/eventmappr/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Bhavya1352/eventmappr" />
+</a>
 
 ---
 
