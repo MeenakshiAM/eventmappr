@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EventMappr – Discover Events Around You</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <style>
+    #browser-warning {
+      display: none;
+      padding: 20px;
+      background-color: #f8d7da;
+      color: #721c24;
+      margin: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    #root:empty + #browser-warning {
+      display: block;
+    }
+  </style>
+  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="./index.js"></script>
+  <script nomodule>
+    document.getElementById('browser-warning').style.display = 'block';
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="browser-warning">
+    <h2>Browser Compatibility Issue</h2>
+    <p>Your browser may not fully support all the features needed to run EventMappr.</p>
+    <p>For the best experience, please use a modern browser like Chrome, Firefox, Edge, or Safari.</p>
+    <p>If you're using Safari and seeing this message, try accessing the site with HTTPS or allow connections to localhost.</p>
+  </div>
+</body>
+</html> 

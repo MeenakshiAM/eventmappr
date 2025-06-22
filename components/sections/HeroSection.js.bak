@@ -1,0 +1,358 @@
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+const HeroSection = () => {
+  return (
+    <section className="hero-section">
+      <div className="hero-background">
+        <div className="hero-shape shape-1"></div>
+        <div className="hero-shape shape-2"></div>
+        <div className="hero-shape shape-3"></div>
+      </div>
+      
+      <div className="container hero-container">
+        <div className="hero-content">
+          <h1 className="hero-title" data-aos="fade-up">Discover Local Events on the Map</h1>
+          <p className="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+            Find and share community events happening around you. 
+            Connect with people who share your interests and never miss out on what's happening nearby.
+          </p>
+          <div className="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+            <Link href="/explore">
+              <span className="btn btn-primary">Explore Map</span>
+            </Link>
+            <Link href="/about">
+              <span className="btn btn-outline">Learn More</span>
+            </Link>
+          </div>
+          
+          <div className="hero-stats" data-aos="fade-up" data-aos-delay="300">
+            <div className="stat-item">
+              <span className="stat-value" data-target="500">500+</span>
+              <span className="stat-label">Events</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value" data-target="10000">10,000+</span>
+              <span className="stat-label">Users</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value" data-target="50">50+</span>
+              <span className="stat-label">Cities</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="hero-image" data-aos="fade-left" data-aos-delay="200">
+          <div className="hero-image-wrapper">
+            <Image 
+              src="/images/heropage.jpg" 
+              alt="Map with event pins showing local events" 
+              width={600} 
+              height={450}
+              priority
+              className="hero-img"
+            />
+            
+            <div className="hero-float-icon icon-1">🎭</div>
+            <div className="hero-float-icon icon-2">🎵</div>
+            <div className="hero-float-icon icon-3">🏆</div>
+            <div className="hero-float-icon icon-4">🎨</div>
+          </div>
+        </div>
+      </div>
+      
+      <style jsx>{`
+        .hero-section {
+          padding: 6rem 0 4rem;
+          background: linear-gradient(135deg, var(--background), var(--background-alt));
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .hero-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          overflow: hidden;
+        }
+        
+        .hero-shape {
+          position: absolute;
+          border-radius: 50%;
+          background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1) 0%, rgba(var(--primary-rgb), 0.05) 100%);
+        }
+        
+        .shape-1 {
+          width: 400px;
+          height: 400px;
+          top: -200px;
+          left: -100px;
+          animation: float 8s ease-in-out infinite;
+        }
+        
+        .shape-2 {
+          width: 300px;
+          height: 300px;
+          bottom: -150px;
+          right: 10%;
+          animation: float 12s ease-in-out infinite;
+          animation-delay: 2s;
+        }
+        
+        .shape-3 {
+          width: 200px;
+          height: 200px;
+          top: 20%;
+          right: -50px;
+          animation: float 10s ease-in-out infinite;
+          animation-delay: 1s;
+        }
+        
+        .hero-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+          position: relative;
+          z-index: 1;
+        }
+        
+        .hero-content {
+          flex: 1;
+          max-width: 600px;
+        }
+        
+        .hero-title {
+          font-size: 3.5rem;
+          line-height: 1.2;
+          margin-bottom: 1.5rem;
+          color: var(--text);
+          position: relative;
+        }
+        
+        .hero-title::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 80px;
+          height: 4px;
+          background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+          border-radius: 2px;
+        }
+        
+        .hero-subtitle {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+          color: var(--text-light);
+        }
+        
+        .hero-buttons {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 2.5rem;
+        }
+        
+        .btn {
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          transition: all 0.4s ease;
+        }
+        
+        .btn::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+          transform: translateX(-100%);
+          transition: transform 0.6s ease;
+          z-index: -1;
+        }
+        
+        .btn:hover::before {
+          transform: translateX(100%);
+        }
+        
+        .btn-primary:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.3);
+        }
+        
+        .btn-outline:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.2);
+        }
+        
+        .hero-stats {
+          display: flex;
+          gap: 2.5rem;
+          margin-top: 1rem;
+        }
+        
+        .stat-item {
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .stat-value {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: var(--primary);
+          margin-bottom: 0.25rem;
+        }
+        
+        .stat-label {
+          font-size: 0.9rem;
+          color: var(--text-light);
+        }
+        
+        .hero-image {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          position: relative;
+        }
+        
+        .hero-image-wrapper {
+          position: relative;
+        }
+        
+        :global(.hero-img) {
+          border-radius: 12px;
+          box-shadow: 0 20px 40px var(--shadow);
+          object-fit: cover;
+          transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        
+        .hero-image-wrapper:hover :global(.hero-img) {
+          transform: translateY(-10px);
+          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-float-icon {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          background-color: var(--background);
+          border-radius: 50%;
+          box-shadow: 0 5px 15px var(--shadow);
+          font-size: 1.5rem;
+          z-index: 2;
+        }
+        
+        .icon-1 {
+          top: -20px;
+          left: 10%;
+          animation: float 4s ease-in-out infinite;
+        }
+        
+        .icon-2 {
+          top: 30%;
+          right: -20px;
+          animation: float 5s ease-in-out infinite;
+          animation-delay: 1s;
+        }
+        
+        .icon-3 {
+          bottom: 10%;
+          left: -15px;
+          animation: float 4.5s ease-in-out infinite;
+          animation-delay: 0.5s;
+        }
+        
+        .icon-4 {
+          bottom: -15px;
+          right: 20%;
+          animation: float 6s ease-in-out infinite;
+          animation-delay: 1.5s;
+        }
+        
+        @media (max-width: 992px) {
+          .hero-container {
+            flex-direction: column;
+            text-align: center;
+          }
+          
+          .hero-content {
+            max-width: 100%;
+          }
+          
+          .hero-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          
+          .hero-buttons {
+            justify-content: center;
+          }
+          
+          .hero-stats {
+            justify-content: center;
+          }
+          
+          .hero-content h1 {
+            font-size: 2.8rem;
+          }
+          
+          .hero-image {
+            justify-content: center;
+            margin-top: 2rem;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .hero-section {
+            padding: 4rem 0 3rem;
+          }
+          
+          .hero-content h1 {
+            font-size: 2.2rem;
+          }
+          
+          .hero-content p {
+            font-size: 1.1rem;
+          }
+          
+          .hero-buttons {
+            flex-direction: column;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+          }
+          
+          .hero-stats {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+          
+          :global(.hero-img) {
+            width: 100%;
+            height: auto;
+          }
+          
+          .hero-float-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+          }
+        }
+      `}</style>
+    </section>
+  );
+};
+
+export default HeroSection; 

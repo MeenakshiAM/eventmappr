@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Tech Meetup 2025",
+    "category": "Technology",
+    "imageUrl": "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Developers network and share insights on the latest web technologies and AI innovations."
+  },
+  {
+    "title": "Summer Jazz Festival",
+    "category": "Music",
+    "imageUrl": "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "An evening of smooth jazz under the stars with local and international artists."
+  },
+  {
+    "title": "Art Gallery Opening",
+    "category": "Art",
+    "imageUrl": "https://images.pexels.com/photos/1070511/pexels-photo-1070511.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Contemporary art exhibition featuring emerging local artists and their latest works."
+  },
+  {
+    "title": "Food Truck Festival",
+    "category": "Food",
+    "imageUrl": "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "A delicious gathering of the city's best food trucks and culinary experiences."
+  },
+  {
+    "title": "Marathon 2025",
+    "category": "Sports",
+    "imageUrl": "https://images.pexels.com/photos/2526878/pexels-photo-2526878.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Annual city marathon bringing together runners from across the region."
+  },
+  {
+    "title": "Startup Pitch Night",
+    "category": "Technology",
+    "imageUrl": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Young entrepreneurs present their innovative business ideas to investors and mentors."
+  },
+  {
+    "title": "Classical Concert Series",
+    "category": "Music",
+    "imageUrl": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Beautiful performance by the city orchestra featuring classical masterpieces."
+  },
+  {
+    "title": "Street Art Workshop",
+    "category": "Art",
+    "imageUrl": "https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Hands-on workshop teaching urban art techniques and creative expression."
+  },
+  {
+    "title": "Wine & Dine Experience",
+    "category": "Food",
+    "imageUrl": "https://images.pexels.com/photos/1407775/pexels-photo-1407775.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Premium wine tasting paired with gourmet dishes from renowned local chefs."
+  },
+  {
+    "title": "Basketball Tournament",
+    "category": "Sports",
+    "imageUrl": "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Exciting community basketball tournament with teams competing for the championship."
+  },
+  {
+    "title": "Coding Bootcamp Graduation",
+    "category": "Technology",
+    "imageUrl": "https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Celebrating the achievements of new developers completing their coding journey."
+  },
+  {
+    "title": "Acoustic Evening",
+    "category": "Music",
+    "imageUrl": "https://images.pexels.com/photos/1677710/pexels-photo-1677710.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Intimate acoustic performances by singer-songwriters in a cozy venue setting."
+  },
+  {
+    "title": "Sculpture Exhibition",
+    "category": "Art",
+    "imageUrl": "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Modern sculpture installation showcasing contemporary artistic interpretations."
+  },
+  {
+    "title": "Farmers Market Special",
+    "category": "Food",
+    "imageUrl": "https://images.pexels.com/photos/264537/pexels-photo-264537.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Weekly farmers market featuring fresh local produce and artisanal goods."
+  },
+  {
+    "title": "Cycling Championship",
+    "category": "Sports",
+    "imageUrl": "https://images.pexels.com/photos/2568468/pexels-photo-2568468.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Professional cycling race through scenic city routes and challenging terrain."
+  },
+  {
+    "title": "AI Workshop Series",
+    "category": "Technology",
+    "imageUrl": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Educational workshop exploring artificial intelligence and machine learning applications."
+  },
+  {
+    "title": "Rock Concert Night",
+    "category": "Music",
+    "imageUrl": "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "High-energy rock concert featuring popular bands and electrifying performances."
+  },
+  {
+    "title": "Photography Exhibition",
+    "category": "Art",
+    "imageUrl": "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Stunning photography collection capturing the beauty of urban and natural landscapes."
+  },
+  {
+    "title": "Culinary Masterclass",
+    "category": "Food",
+    "imageUrl": "https://images.pexels.com/photos/8629138/pexels-photo-8629138.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Professional cooking class led by master chefs teaching advanced culinary techniques."
+  },
+  {
+    "title": "Swimming Competition",
+    "category": "Sports",
+    "imageUrl": "https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "caption": "Regional swimming championship with athletes competing in various stroke categories."
+  }
+]

@@ -1,6 +1,6 @@
 ---
 name: "🐛 Bug Report"
-about: Report a bug or issue in Civix
+about: Report a bug or issue in Eventmappr
 title: "[Bug]: "
 labels: bug
 assignees: ''

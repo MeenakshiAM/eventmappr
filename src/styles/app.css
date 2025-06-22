@@ -1,0 +1,42 @@
+/* App container styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Home container styles */
+.home-container {
+  flex: 1;
+  padding-top: 80px; /* Add padding to prevent navbar overlap */
+}
+
+/* Navbar adjustments */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Fix for hero section to avoid overlap with navbar */
+.hero {
+  padding-top: 2rem;
+  margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-container {
+    padding-top: 70px;
+  }
+  
+  .hero {
+    padding-top: 1rem;
+  }
+}
+
+/* Fix for footer duplication */
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+} 
